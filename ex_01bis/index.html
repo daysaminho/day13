@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ex_01bis.js"></script> <!-- Link the JS file -->
+</head>
+<body>
+<form class="form" onsubmit="return handleSubmit(event)"> <!-- Form submission triggers handleSubmit -->
+  <div class="title">Welcome</div>
+  <div class="subtitle">Let's create your account!</div>
+  
+  <!-- Champ "First name" -->
+  <div class="input-container ic2">
+    <input id="firstname" class="input" type="text" placeholder=" " />
+    <div class="cut"></div>
+    <label for="firstname" class="placeholder">First name</label>
+  </div>
+
+  <!-- Champ "Last name" -->
+  <div class="input-container ic2">
+    <input id="lastname" class="input" type="text" placeholder=" " />
+    <div class="cut"></div>
+    <label for="lastname" class="placeholder">Last name</label>
+  </div>
+
+  <!-- Champ "Email" -->
+  <div class="input-container ic2">
+    <input id="email" class="input" type="email" placeholder=" " />
+    <div class="cut"></div>
+    <label for="email" class="placeholder">Email</label>
+  </div>
+
+  <!-- Champ "Password" -->
+  <div class="input-container ic2">
+    <input id="password" class="input" type="password" placeholder=" " />
+    <div class="cut"></div>
+    <label for="password" class="placeholder">Password</label>
+  </div>
+
+  <button type="submit" class="submit">Submit</button> <!-- Normal submit button -->
+  <p id="error" class="error"></p>
+</form>
+</body>
+</html>
